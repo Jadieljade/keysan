@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative; 
+    background: #000000;
+    
+
+}
+
+#canvas {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+}
+
+.overlay-content {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+    color: #fff; 
+}
+h1{
+    color:red;
+    font-family: "Dancing Script", cursive;
+}
+a {
+    color: rgb(201, 19, 35);
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  
+  a:active {
+    color:red;
+  }
+  a {
+    text-decoration: blink;
+  }
+  .rose-icon {
+    width: 50px;
+    height: auto; 
+    vertical-align: middle;
+}
+.red-text {
+    color: rgb(226, 7, 7);
+    font-family:"Dancing Script", cursive;
+}
+
+.pink-text {
+    color:burlywood;
+    font-family:"Dancing Script", cursive;
+}
+.red-underline {
+  position: relative;
+}
+
+.red-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust as needed */
+  width: 80%;
+  height: 2px; /* Adjust thickness as needed */
+  background-color: red; /* Set the underline color */
+}

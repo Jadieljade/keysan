@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Man The Legend The Myth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: burlywood;
+        margin: 0;
+        font-family: "Caveat", cursive;
+      }
+
+      #poem-container {
+        position: absolute;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 80%;
+
+        text-align: left;
+        color: rgb(0, 0, 0);
+        z-index: 2;
+      }
+
+      .container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: shake;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      .container .base {
+        width: 50%;
+        height: 50%;
+        background: red;
+        transform: rotate(45deg);
+        position: relative;
+        top: 5%;
+      }
+
+      .container .base.primary {
+        animation-name: beating-heart;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        z-index: 1;
+      }
+
+      .container .base.secondary {
+        position: absolute;
+        top: 30%;
+        animation-name: ripple-one;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      .container .base.tertiary {
+        position: absolute;
+        top: 30%;
+        animation-name: ripple-two;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      .container .base .part {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: red;
+        position: absolute;
+      }
+
+      .container .base .part.left {
+        top: 0;
+        left: -50%;
+      }
+
+      .container .base .part.right {
+        top: -50%;
+        left: 0;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: rotate(0deg);
+        }
+        55% {
+          transform: rotate(0deg);
+        }
+        57% {
+          transform: rotate(5deg);
+        }
+        59% {
+          transform: rotate(0deg);
+        }
+        61% {
+          transform: rotate(0deg);
+        }
+        63% {
+          transform: rotate(-5deg);
+        }
+        65% {
+          transform: rotate(0deg);
+        }
+        85% {
+          transform: rotate(0deg);
+        }
+        87% {
+          transform: rotate(5deg);
+        }
+        89% {
+          transform: rotate(0deg);
+        }
+        91% {
+          transform: rotate(0deg);
+        }
+        93% {
+          transform: rotate(-5deg);
+        }
+        95% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes beating-heart {
+        0% {
+          transform: rotate(45deg) scale(1, 1);
+        }
+        40% {
+          transform: rotate(45deg) scale(1, 1);
+        }
+        50% {
+          transform: rotate(45deg) scale(2, 2);
+        }
+        60% {
+          transform: rotate(45deg) scale(1, 1);
+        }
+        70% {
+          transform: rotate(45deg) scale(1, 1);
+        }
+        80% {
+          transform: rotate(45deg) scale(2, 2);
+        }
+        100% {
+          transform: rotate(45deg) scale(1, 1);
+        }
+      }
+
+      @keyframes ripple-one {
+        0% {
+          transform: rotate(45deg) scale(1, 1);
+          opacity: 1;
+        }
+        40% {
+          transform: rotate(45deg) scale(1, 1);
+          opacity: 1;
+        }
+        70% {
+          transform: rotate(45deg) scale(4, 4);
+          opacity: 0;
+        }
+        71% {
+          transform: rotate(45deg) scale(1, 1);
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(45deg) scale(1, 1);
+          opacity: 0;
+        }
+      }
+
+      @keyframes ripple-two {
+        0% {
+          transform: rotate(45deg) scale(1, 1);
+          opacity: 1;
+        }
+        70% {
+          transform: rotate(45deg) scale(1, 1);
+          opacity: 1;
+        }
+        99% {
+          transform: rotate(45deg) scale(4, 4);
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(45deg) scale(1, 1);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="poem-container">
+      <h1>The saint</h1>
+      <p>
+        In the records of time, where legends reside,<br />
+        Lives a tale of a saint, with love as his guide.<br />
+        Though history may cloak him, his essence abides,<br />
+        In the whispers of lovers, where passion collides.<br /><br />
+
+        From the depths of his heart, he spread his embrace,<br />
+        In the name of love, he found his grace.<br />
+        Through the veil of secrecy, in a hidden place,<br />
+        He wrote love's story, with elegance and lace.<br /><br />
+
+        In dark chambers, where candles flicker low,<br />
+        He united souls, like a gentle, amorous flow.<br />
+        With vows whispered softly, in the moon's soft glow,<br />
+        He kindled flames of love, where seeds did sow.<br /><br />
+
+        With each clandestine union, his legend did grow,<br />
+        As lovers found solace in love's warm glow.<br />
+        In his sanctuary of love, where hearts bestow,<br />
+        He nurtured love's garden, letting passion flow.<br /><br />
+
+        Oh, the tales of his deeds, like stars in the night,<br />
+        Illuminate love's path, shining bright.<br />
+        Through trials and tribulations, love takes flight,<br />
+        Guided by his spirit, love conquers despite.<br /><br />
+
+        So let us celebrate this saint of amour,<br />
+        Whose devotion to love, we forever adore.<br />
+        In the tapestry of romance, his presence we implore,<br />
+        For in the realm of love, his spirit forevermore.<br />
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="base primary">
+        <div class="part left"></div>
+        <div class="part right"></div>
+      </div>
+      <div class="base secondary">
+        <div class="part left"></div>
+        <div class="part right"></div>
+      </div>
+      <div class="base tertiary">
+        <div class="part left"></div>
+        <div class="part right"></div>
+      </div>
+    </div>
+  </body>
+</html>

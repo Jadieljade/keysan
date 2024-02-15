@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>I heart You</title>
+    <style>
+      /* CSS styles for the heart animation */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: black;
+        font-size: 16px;
+        font-family: "Caveat", cursive;
+      }
+
+      .iheartu {
+        animation: iheartu 6s linear infinite;
+        background-color: red;
+        border-radius: 0 0 0 0;
+        border: 0 solid transparent;
+        height: 5vmin;
+        margin: 0 auto;
+        margin-top: 45vmin;
+        position: relative;
+        transform: rotate(0);
+        width: 5vmin;
+      }
+
+      .iheartu:before {
+        animation: iheartu-before 6s linear infinite;
+        content: "";
+        position: absolute;
+        background-color: red;
+        border-radius: 0 0 0 0;
+        height: 15vmin;
+        left: 0;
+        top: -15vmin;
+        transform: rotate(0);
+        width: 2.5vmin;
+      }
+
+      .iheartu:after {
+        animation: iheartu-after 6s linear infinite;
+        content: "";
+        position: absolute;
+        background-color: red;
+        border-radius: 0 0 0 0;
+        height: 15vmin;
+        left: 2.5vmin;
+        right: 0;
+        top: -15vmin;
+        transform: rotate(0);
+        width: 2.5vmin;
+      }
+
+      @keyframes iheartu {
+        0% {
+          background-color: red;
+          border-radius: 0 0 0 0;
+          border: 0 solid transparent;
+          height: 5vmin;
+          margin: 0 auto;
+          margin-top: 45vmin;
+          position: relative;
+          transform: rotate(0);
+          width: 5vmin;
+        }
+        30% {
+          background-color: red;
+          border-radius: 0 0 0 0;
+          border: 0 solid transparent;
+          height: 5vmin;
+          margin: 0 auto;
+          margin-top: 45vmin;
+          position: relative;
+          transform: rotate(0);
+          width: 5vmin;
+        }
+        33.3% {
+          background-color: red;
+          border-radius: 0 0 0 0;
+          border: 0 solid transparent;
+          height: 10vmin;
+          margin: 0 auto;
+          margin-top: 37vmin;
+          position: relative;
+          transform: rotate(-45deg);
+          width: 10vmin;
+        }
+        63.3% {
+          background-color: red;
+          border-radius: 0 0 0 0;
+          border: 0 solid transparent;
+          height: 10vmin;
+          margin: 0 auto;
+          margin-top: 37vmin;
+          position: relative;
+          transform: rotate(-45deg);
+          width: 10vmin;
+        }
+        66.6% {
+          background-color: black;
+          border-bottom: 5vmin solid red;
+          border-left: 5vmin solid red;
+          border-right: 5vmin solid red;
+          border-radius: 0 0 10vmin 10vmin;
+          margin-top: 40vmin;
+          height: 10vmin;
+          transform: rotate(0);
+          width: 20vmin;
+        }
+        96.6% {
+          background-color: black;
+          border-bottom: 5vmin solid red;
+          border-left: 5vmin solid red;
+          border-right: 5vmin solid red;
+          border-radius: 0 0 10vmin 10vmin;
+          margin-top: 40vmin;
+          height: 10vmin;
+          transform: rotate(0);
+          width: 20vmin;
+        }
+      }
+
+      @keyframes iheartu-before {
+        0% {
+          content: "";
+          position: absolute;
+          background-color: red;
+          border-radius: 0 0 0 0;
+          height: 15vmin;
+          left: 0;
+          top: -15vmin;
+          transform: rotate(0);
+          width: 2.5vmin;
+        }
+        30% {
+          content: "";
+          position: absolute;
+          background-color: red;
+          border-radius: 0 0 0 0;
+          height: 15vmin;
+          left: 0;
+          top: -15vmin;
+          transform: rotate(0);
+          width: 2.5vmin;
+        }
+        33.3% {
+          content: "";
+          position: absolute;
+          border-radius: 10vmin 10vmin 0 0;
+          height: 10.1vmin;
+          left: 0;
+          top: -10vmin;
+          transform: rotate(0);
+          width: 11vmin;
+        }
+        63.3% {
+          content: "";
+          position: absolute;
+          border-radius: 10vmin 10vmin 0 0;
+          height: 10.1vmin;
+          left: 0;
+          top: -10vmin;
+          transform: rotate(0);
+          width: 11vmin;
+        }
+        66.6% {
+          content: "";
+          position: absolute;
+          background-color: red;
+          border-radius: 0 0 0 0;
+          height: 10.1vmin;
+          left: -5vmin;
+          top: -10vmin;
+          transform: rotate(0);
+          width: 5vmin;
+        }
+        96.6% {
+          content: "";
+          position: absolute;
+          background-color: red;
+          border-radius: 0 0 0 0;
+          height: 10.1vmin;
+          left: -5vmin;
+          top: -10vmin;
+          transform: rotate(0);
+          width: 5vmin;
+        }
+      }
+
+      @keyframes iheartu-after {
+        0% {
+          content: "";
+          position: absolute;
+          background-color: red;
+          border-radius: 0 0 0 0;
+          height: 15vmin;
+          left: 2.5vmin;
+          right: 0;
+          top: -15vmin;
+          transform: rotate(0);
+          width: 2.5vmin;
+        }
+        30% {
+          content: "";
+          position: absolute;
+          background-color: red;
+          border-radius: 0 0 0 0;
+          height: 15vmin;
+          left: 2.5vmin;
+          right: 0;
+          top: -15vmin;
+          transform: rotate(0);
+          width: 2.5vmin;
+        }
+        33.3% {
+          content: "";
+          position: absolute;
+          border-radius: 10vmin 10vmin 0 0;
+          height: 11.1vmin;
+          left: 9vmin;
+          right: -1vmin;
+          top: -1vmin;
+          transform: rotate(90deg);
+          width: 11vmin;
+        }
+        63.3% {
+          content: "";
+          position: absolute;
+          border-radius: 10vmin 10vmin 0 0;
+          height: 11.1vmin;
+          left: 9vmin;
+          right: -1vmin;
+          top: -1vmin;
+          transform: rotate(90deg);
+          width: 11vmin;
+        }
+        66.6% {
+          content: "";
+          position: absolute;
+          background-color: red;
+          border-radius: 0 0 0 0;
+          height: 10.1vmin;
+          left: 10vmin;
+          right: 0;
+          top: -10vmin;
+          transform: rotate(0);
+          width: 5vmin;
+        }
+        96.6% {
+          content: "";
+          position: absolute;
+          background-color: red;
+          border-radius: 0 0 0 0;
+          height: 10.1vmin;
+          left: 10vmin;
+          right: 0;
+          top: -10vmin;
+          transform: rotate(0);
+          width: 5vmin;
+        }
+      }
+
+      /* CSS styles for the poem */
+      .poem-container {
+        position: relative;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 80%;
+
+        text-align: left;
+        color: white;
+        z-index: 2;
+      }
+
+      .poem {
+        font-size: 15px;
+        line-height: 1.5rem; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="iheartu"></div>
+    <div class="poem-container">
+      <div class="poem">
+        <h1>A whisper to the lovers heart</h1>
+        
+        As countless Valentines come and go,<br />
+        In each other's arms,our love will grow,<br />
+        Through every up and down, we'll know,<br />
+        Our bond, unbreakable, in its gentle flow.<br /><br />
+
+        We'll dance upon the sandy shores,<br />
+        As waves caress our feet, our love restores,<br />
+        In the embrace of the ocean's roars,<br />
+        Our hearts entwined, forevermore.<br /><br />
+
+        With every sunrise, we'll greet the day,<br />
+        Hand in hand, we'll find our way,<br />
+        Through fields of gold and skies of gray,<br />
+        Our love, a beacon, come what may.<br /><br />
+
+        In forests deep, we'll wander free,<br />
+        Beneath the canopy, just you and me,<br />
+        With every whisper of the breeze, we'll see,<br />
+        Our loves tune, a timeless symphony.<br /><br />
+
+        Through storms that rage and skies that weep,<br />
+        In each other's arms, our love we'll keep,<br />
+        Together we'll find solace in the deep,<br />
+        Our love, a promise, we'll forever reap.<br /><br />
+
+        And when the stars above align,<br />
+        And our souls meet in the divine,<br />
+        I'll whisper softly, 'You are mine',<br />
+        With every breath, our love will shine.<br /><br />
+
+        In every moment, our love will thrive,<br />
+        In laughter and tears, we'll come alive,<br />
+        With every step, our souls will strive,<br />
+        In love's embrace, we'll forever dive.<br /><br />
+
+        So fear not, my love, for I'll be true,<br />
+        In every moment, I'll cherish you,<br />
+        With every beat, our love will renew,<br />
+        I whisper, 'I love you', forever, I do.<br /><br />
+
+        For in the tapestry of fate we weave,<br />
+        In each other's hearts, our love will cleave,<br />
+        Through every moment, in love, we believe,<br />
+        Our souls entwined, forever to achieve.<br /><br />
+
+        And as the seasons pass, our love will grow,<br />
+        In the warmth of spring, and winter's snow,<br />
+        With every sunrise, our hearts aglow,<br />
+        Our love, an eternal flame to show.<br /><br />
+
+        So let the years roll on, like rivers wide,<br />
+        In the journey of love, we'll never hide,<br />
+        In each other's arms, we'll find our stride,<br />
+        Together, forever, side by side.<br />
+      </div>
+    </div>
+  </body>
+</html>
